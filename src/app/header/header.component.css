@@ -16,7 +16,7 @@
   transition: all .4s;
 }
 
-.tabs-container.none-selected {
+/* .tabs-container.none-selected {
   padding-top: 40vh;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -33,7 +33,7 @@
   -moz-transition: all 1.5s;
   -o-transition: all 1.5s;
   transition: all 1.5s;
-}
+} */
 
 .tab-selected {
   border-bottom: 4px solid blue;
@@ -44,6 +44,11 @@
   left: 20px;
   font-weight: 500;
   font-size: 21px;
+}
+
+.tabs-container .tab-right-content {
+  position: absolute;
+  right: 20px;
 }
 
 .tab-content-container {

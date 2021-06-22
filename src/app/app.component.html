@@ -1,4 +1,6 @@
 <app-header [tabs]="tabs" (selectedTabChanged)="selectedTabChanged($event)"></app-header>
-<div class="tab-content-container" *ngIf="selectedTab$ | async as tab">
-  <ng-container *ngComponentOutlet="tab.component"></ng-container>
+<div class="tab-content-container" >
+  <ng-container *ngIf="selectedTab$ | async as tab">
+    <ng-container *ngComponentOutlet="tab.component"></ng-container>
+  </ng-container>
 </div>
