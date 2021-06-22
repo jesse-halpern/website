@@ -1,0 +1,6 @@
+<div class="tabs-container" [class.none-selected]="selectedTab === undefined">
+  <span class="tab-header">Jesse Halpern</span>
+  <ng-container *ngFor="let tab of tabs">
+    <span class="tab" [class.tab-selected]="selectedTab === tab" (click)="selectTab(tab)">{{tab.title}}</span>
+  </ng-container>
+</div>
