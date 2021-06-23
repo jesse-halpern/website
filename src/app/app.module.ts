@@ -6,17 +6,17 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
-import { GeneralComponent } from './tabs/general/general.component';
 import { ExperienceComponent } from './tabs/experience/experience.component';
-import { ReviewsComponent } from './tabs/reviews/reviews.component';
+import { SkillsComponent } from './tabs/skills/skills.component';
+import { ContactComponent } from './tabs/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    GeneralComponent,
     ExperienceComponent,
-    ReviewsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -27,9 +27,9 @@ import { ReviewsComponent } from './tabs/reviews/reviews.component';
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
-    GeneralComponent,
     ExperienceComponent,
-    ReviewsComponent
+    SkillsComponent,
+    ContactComponent
   ]
 })
 export class AppModule { }

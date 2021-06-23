@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Tab } from './header/header.component';
+import { ContactComponent } from './tabs/contact/contact.component';
 import { ExperienceComponent } from './tabs/experience/experience.component';
-import { GeneralComponent } from './tabs/general/general.component';
-import { ReviewsComponent } from './tabs/reviews/reviews.component';
+import { SkillsComponent } from './tabs/skills/skills.component';
 
 const TABS: Tab[] = [
-  {
-    title: 'General',
-    component: GeneralComponent
-  },
   {
     title: 'Experience',
     component: ExperienceComponent
   },
   {
-    title: 'Reviews',
-    component: ReviewsComponent
+    title: 'Skills',
+    component: SkillsComponent
+  },
+  {
+    title: 'Contact Me',
+    component: ContactComponent
   }
 ];
 
