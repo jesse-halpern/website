@@ -1,11 +1,5 @@
 <div class="tabs-container" [class.none-selected]="selectedTab === undefined">
-  <span class="tab-header">Jesse Halpern</span>
   <ng-container *ngFor="let tab of tabs">
     <span class="tab" [class.tab-selected]="selectedTab === tab" (click)="selectTab(tab)">{{tab.title}}</span>
   </ng-container>
-  <span class="tab-right-content">
-    <a href="mailto:jessehalpern1@gmail.com"><img style="height: 25px; margin-right: 12px;" src="./assets/images/email-icon.svg"></a>
-    <a href="https://www.linkedin.com/in/jesse-halpern/" target="_blank"><img style="height: 25px; margin-right: 12px;" src="./assets/images/linkedin-icon.svg"></a>
-    <a href="https://github.com/jesse-halpern/website" target="_blank"><img style="height: 25px;" src="./assets/images/github-icon.svg"></a>
-  </span>
 </div>

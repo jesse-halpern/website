@@ -1,6 +1,22 @@
-<app-header [tabs]="tabs" (selectedTabChanged)="selectedTabChanged($event)"></app-header>
-<div class="tab-content-container" >
-  <ng-container *ngIf="selectedTab$ | async as tab">
-    <ng-container *ngComponentOutlet="tab.component"></ng-container>
-  </ng-container>
+<div class="page-top-right">
+  <a href="mailto:jessehalpern1@gmail.com"><img style="height: 25px; margin-right: 12px;" src="./assets/images/email-icon.svg"></a>
+  <a href="https://www.linkedin.com/in/jesse-halpern/" target="_blank"><img style="height: 25px; margin-right: 12px;" src="./assets/images/linkedin-icon.svg"></a>
+  <a href="https://github.com/jesse-halpern/website" target="_blank"><img style="height: 25px;" src="./assets/images/github-icon.svg"></a>
+</div>
+<div class="page-top-left">
+  <span>Jesse Halpern</span>
+</div>
+<div class="page">
+  <app-header [tabs]="tabs" (selectedTabChanged)="selectedTabChanged($event)"></app-header>
+  <div class="tab-content-container" >
+    <ng-container *ngIf="selectedTab$ | async as tab; else noneSelected">
+      <ng-container *ngComponentOutlet="tab.component"></ng-container>
+    </ng-container>
+    <ng-template #noneSelected>
+      <div class="intro-text">
+        <h1 id="intro-text-segment-1">Hello, world</h1>
+        <h2><span id="intro-text-segment-2">I'm Jesse</span><span id="intro-text-segment-3">, a software engineer</span></h2>
+      </div>
+    </ng-template>
+  </div>
 </div>
