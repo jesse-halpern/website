@@ -1,12 +1,19 @@
 .tabs-container {
+  display: flex;
   text-align: center;
   padding: 20px;
 }
 
 .tabs-container .tab {
-  padding: 20px;
-  margin: 20px;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
   cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .tabs-container .tab {
+    margin: 0px 50px 0px 50px;
+  }
 }
 
 .tabs-container .tab:hover:not(.tab-selected) {
