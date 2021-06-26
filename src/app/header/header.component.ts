@@ -12,18 +12,18 @@ export interface Tab {
   // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent implements OnInit {
-  selectedTab: Tab;
-
+  @Input() selectedTab?: Tab;
   @Input() tabs: Tab[];
   @Output() selectedTabChanged = new EventEmitter<Tab>();
 
   ngOnInit() {
-    // this.selectTab(this.tabs[0]);
+    if(this.selectedTab) {
+      this.selectTab(this.selectedTab);
+    }
   }
 
-  selectTab(tab: Tab){
+  selectTab(tab: Tab) {
     this.selectedTab = tab;
     this.selectedTabChanged.emit(tab);
   }
-
 }
