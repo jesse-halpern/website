@@ -1,0 +1,9 @@
+table {
+    width: 70%;
+}
+
+@media (max-width: 480px) {
+    table {
+      width: 100%;
+    }
+}

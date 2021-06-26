@@ -1,6 +1,6 @@
 <ng-container *ngFor="let category of skillOrdering">
   <h2>{{category}}</h2>
-  <table style="width: 60%;">
+  <table>
     <tr *ngFor="let skill of skillCategories[category]">
       <td>{{skill.name}}</td>
       <!-- [style.width]="skill.level*100/4 + '%'" -->
