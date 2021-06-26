@@ -1,32 +1,15 @@
-<ul>
-  <li><h2>Languages</h2>
-    <ul>
-      <li>Typescript</li>
-      <li>Javascript</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>C#</li>
-      <li>Python</li>
-    </ul>
-  </li>
-  <li><h2>Frameworks</h2>
-    <ul>
-      <li>Angular</li>
-      <li>AngularJS</li>
-      <li>node.js</li>
-      <li>.NET Framework</li>
-      <li>StencilJS</li>
-      <li>Jasmine</li>
-      <li>Jest</li>
-      <li>Storybook</li>
-    </ul>
-  </li>
-  <li><h2>Tools</h2>
-    <ul>
-      <li>Git</li>
-      <li>Webpack</li>
-      <li>Grunt</li>
-      <li>Yarn</li>
-    </ul>
-  </li>
-</ul>
+<ng-container *ngFor="let category of skillOrdering">
+  <h2>{{category}}</h2>
+  <table style="width: 75%;">
+    <tr *ngFor="let skill of skillCategories[category]">
+      <td>{{skill.name}}</td>
+      <!-- [style.width]="skill.level*100/4 + '%'" -->
+      <td class="skill-level-cell" style="width: 80%;">
+        <div class="skill-level-bar" [style.width]="skill.level*100/4 + '%'">
+          <!-- <div class="skill-level-bar-inner" ></div> -->
+        </div>
+        <!-- <div class="skill-level-bar" style="width: 100%; "></div> -->
+      </td>
+    </tr>
+  </table>
+</ng-container>
