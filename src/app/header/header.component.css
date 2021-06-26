@@ -4,10 +4,11 @@
   padding: 20px;
 }
 
-.tabs-container .tab {
+.tab {
   width: 100%;
   padding: 20px 0px 20px 0px;
   cursor: pointer;
+  border-bottom: 4px solid white;
 }
 
 @media (min-width: 480px) {
@@ -16,12 +17,12 @@
   }
 }
 
-.tabs-container .tab:hover:not(.tab-selected) {
+.tab:hover:not(.tab-selected) {
   border-bottom: 4px solid darkblue;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 /* .tabs-container.none-selected {
@@ -43,10 +44,6 @@
   transition: all 1.5s;
 } */
 
-.tab-selected {
+.tab.tab-selected {
   border-bottom: 4px solid blue;
-}
-
-.tab-content-container {
-  padding: 20px;
 }

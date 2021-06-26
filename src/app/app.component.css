@@ -11,10 +11,16 @@
   }
 }
 
+@media (min-width: 480px) {
+  .page {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+
 .page {
   padding-top: 5vh;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  height: 95vh;
 }
 
 .page-top-right {
@@ -33,6 +39,8 @@
 
 .tab-content-container {
   padding: 20px;
+  background-color: #EAEAEA;
+  border-radius: 15px;
 }
 
 nav {
