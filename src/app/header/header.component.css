@@ -2,6 +2,7 @@
   display: flex;
   text-align: center;
   padding: 20px;
+  white-space: nowrap;
 }
 
 .tab {
@@ -11,9 +12,12 @@
   border-bottom: 4px solid white;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 800px) {
   .tabs-container .tab {
     margin: 0px 50px 0px 50px;
+  }
+  .tabs-container {
+    padding-top: 0px;
   }
 }
 

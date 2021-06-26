@@ -18,8 +18,19 @@
   }
 }
 
+@media(max-width: 800px){
+  .page {
+    padding-top: 5vh;
+  }
+}
+
+@media(min-width: 800px){
+  .page {
+    padding-top: 1vh;
+  }
+}
+
 .page {
-  padding-top: 5vh;
   height: 95vh;
 }
 
@@ -41,6 +52,7 @@
   padding: 20px;
   background-color: #EAEAEA;
   border-radius: 15px;
+  overflow: auto;
 }
 
 nav {
