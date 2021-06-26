@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { ExperienceComponent } from './tabs/experience/experience.component';
 import { SkillsComponent } from './tabs/skills/skills.component';
 import { ContactComponent } from './tabs/contact/contact.component';
+import { LevelBarComponent } from './tabs/skills/level-bar/level-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './tabs/contact/contact.component';
     HeaderComponent,
     ExperienceComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    LevelBarComponent
   ],
   imports: [
     BrowserModule,

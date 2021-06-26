@@ -1,13 +1,11 @@
 <ng-container *ngFor="let category of skillOrdering">
   <h2>{{category}}</h2>
-  <table style="width: 75%;">
+  <table style="width: 60%;">
     <tr *ngFor="let skill of skillCategories[category]">
       <td>{{skill.name}}</td>
       <!-- [style.width]="skill.level*100/4 + '%'" -->
       <td class="skill-level-cell" style="width: 80%;">
-        <div class="skill-level-bar" [style.width]="skill.level*100/4 + '%'">
-          <!-- <div class="skill-level-bar-inner" ></div> -->
-        </div>
+        <app-level-bar startColor="#EAEAEA" endColor="#0c004f" [percentage]="skill.level/4"></app-level-bar>
         <!-- <div class="skill-level-bar" style="width: 100%; "></div> -->
       </td>
     </tr>
