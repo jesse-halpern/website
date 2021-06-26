@@ -14,3 +14,14 @@ ul h4 {
 ul > li::marker {
   font-size: 1.5em;
 }
+
+.company {
+  font-weight: normal;
+}
+
+.years {
+  float: right;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
+}
