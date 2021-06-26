@@ -1,4 +1,3 @@
-import { Renderer2 } from '@angular/core';
 import { ChangeDetectionStrategy, Component, Input, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -8,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./level-bar.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class LevelBarComponent implements AfterViewInit {
+export class LevelBarComponent {
   @Input() startColor: string; // Hexadecimal
   @Input() endColor: string; // Hexadecimal
   @Input() percentage: number; // Between 0 and 1, inclusive
@@ -23,10 +22,6 @@ export class LevelBarComponent implements AfterViewInit {
   };
 
   constructor(private sanitizer: DomSanitizer) { }
-
-  ngAfterViewInit() {
-
-  }
 
   getHexColorSegment(hexCode: string, number: 0 | 1 | 2) {
     return hexCode.slice(number*2, number*2 + 2);
@@ -60,12 +55,6 @@ export class LevelBarComponent implements AfterViewInit {
 
   getBackgroundCssString() {
     return this.sanitizer.bypassSecurityTrustStyle(`linear-gradient(to right, ${this.startColor}, ${this.getGradientEnd(this.startColor, this.endColor, this.percentage)})`);
-  }
-
-  getStyle() {
-    return {
-      background: this.getBackgroundCssString()
-    }
   }
 
 }

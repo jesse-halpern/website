@@ -1,13 +1,6 @@
 .skill-level-bar {
-    height: 10px;
-    border-radius: 15px;
-    /* background: rgb(234,234,234); */
-    /* background: linear-gradient(90deg, rgba(234,234,234,1), rgba(112,112,233,1), rgba(0,0,233,1), rgba(0,0,150,1), rgba(0,0,84,1)); */
-  }
-  
-  .skill-level-bar-inner {
-    float: right;
-    right: 0px;
-    height: 10px;
-    background: #EAEAEA;
-  }
+  height: 10px;
+  border-radius: 15px;
+  /* background: rgb(234,234,234); */
+  /* background: linear-gradient(90deg, rgba(234,234,234,1), rgba(112,112,233,1), rgba(0,0,233,1), rgba(0,0,150,1), rgba(0,0,84,1)); */
+}
