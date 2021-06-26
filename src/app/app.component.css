@@ -53,7 +53,7 @@ nav li {
 
 .intro-text {
   display: inline-block;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
 }
 
 #intro-text-segment-1 {
